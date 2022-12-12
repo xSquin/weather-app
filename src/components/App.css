@@ -6,37 +6,43 @@
   font-family: 'Bebas Neue', cursive;
 }
 body{
-  background: url('../img/background.jpg') center;
+  background-image: url('../img/background.jpg');
+  background-position: center;
+}
+@media screen and (max-width: 600px){
+  body{
+    background-image: linear-gradient(rgb(245, 160, 2), rgb(12, 60, 190));
+  }
 }
 .weather-props{
   text-align: center;
 }
-.city, .date{
+.city, .date-today{
   position: relative;
   display: inline-block;
 }
-.pressure, .wind{
+.pressure-today, .wind-today{
   position: relative;
   display: inline-block;
 }
-.city, .date, .description, .pressure, .temp, .wind{
+.city, .date-today, .description-today, .pressure-today, .temp-today, .wind-today{
   margin: 1vh;
 }
-.temp{
+.temp-today{
   margin-bottom: 2vh;
 }
 .city{
   font-size: 6em;
 }
-.date{
+.date-today{
   font-size: 2em;
 }
-.temp{
+.temp-today{
   border: 2px solid black;
   border-radius: 25px;
   font-size: 2em;
 }
-.description{
+.description-today{
   font-size: 1.5em;
   display: flex;
   align-items: center;
@@ -47,7 +53,7 @@ body{
   width: 2em;
   height: 2em;
 }
-.pressure, .wind{
+.pressure-today, .wind-today{
   font-size: 1.25em;
 }
 .air{
@@ -71,10 +77,10 @@ body{
   margin: 1em;
   background-color: rgb(245, 245, 238, 0.65);
 }
-.date-o{
+.date-other-days{
   font-size: 1.65em;
 }
-.temp-o{
+.temp-other-days{
   font-size: 1.35em;
 }
 .thermometer{
