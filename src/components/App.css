@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bebas Neue', cursive;
+}
+body{
+  background-image: url('../img/background.jpg');
+  background-position: center;
+}
+@media screen and (max-width: 600px){
+  body{
+    background-image: linear-gradient(rgb(245, 160, 2), rgb(12, 60, 190));
+  }
+}
+.weather-props{
+  text-align: center;
+}
+.city, .date-today{
+  position: relative;
+  display: inline-block;
+}
+.pressure-today, .wind-today{
+  position: relative;
+  display: inline-block;
+}
+.city, .date-today, .description-today, .pressure-today, .temp-today, .wind-today{
+  margin: 1vh;
+}
+.temp-today{
+  margin-bottom: 2vh;
+}
+.city{
+  font-size: 6em;
+}
+.date-today{
+  font-size: 2em;
+}
+.temp-today{
+  border: 2px solid black;
+  border-radius: 25px;
+  font-size: 2em;
+}
+.description-today{
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 1vh;
+}
+.description-img{
+  width: 2em;
+  height: 2em;
+}
+.pressure-today, .wind-today{
+  font-size: 1.25em;
+}
+.air{
+  vertical-align: sub;
+}
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.temp-text{
+  font-size: 0.5em !important;
+  vertical-align: super;
+}
+.box-other-days{
+  position: relative;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 15%;
+  padding: 1em;
+  margin: 1em;
+  background-color: rgb(245, 245, 238, 0.65);
+}
+.date-other-days{
+  font-size: 1.65em;
+}
+.temp-other-days{
+  font-size: 1.35em;
+}
+.thermometer{
+  vertical-align: sub;
+}
